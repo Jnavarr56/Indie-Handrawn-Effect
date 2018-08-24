@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+section {
+  margin: 0 auto;
+  
+  height: 800px;
+  width: 1000px;
+  
+  
+  
+  position: relative;
+  top: 0px;
+  
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  height: 400px;
+  width: 1000px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle {
+  height: 400px;
+  width: 400px;
+  
+  border-style: solid;
+  border-radius: 100%;
+  
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spinR {
+  animation: spinR 1s linear 0s infinite;
+}
+.spinL {
+  animation: spinL 1s linear 0s infinite;
+}
+@keyframes spinR {
+  100% {transform: rotate(360deg);}
+}
+@keyframes spinL {
+  100% {transform: rotate(-360deg);}
+}
+.top-circle {
+  top: 85px;
+  border-width: 1px 3px 1px 6px;
+}
+#left {
+  left: 60px;
+  border-width: 4px 1px 3px 1px;
+}
+#right {
+  right: 60px;
+  border-width: 1px 4px 1px 3px;
+}
+.bottom-circle {
+  bottom: 85px;
+}
+h1 {
+  font-family: "Indie flower";
+  font-size: 200%;
+}
+#intersection {
+  font-size: 15px;
+  
+  margin: 0 auto;
+  
+  position: absolute;
+  top: 440px;
+  left: 460px;
+  
+  animation-play-state: paused;
+}
